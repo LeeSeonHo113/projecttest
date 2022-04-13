@@ -1,0 +1,71 @@
+{{>/layout/header}}
+
+<!-- 상세보기 박스 시작 -->
+<div class="container mt-3">
+    <table class="table table-striped">
+        <!-- 테이블 메뉴 시작 -->
+        <thead>
+            <tr>
+                <th>정보</th>
+            </tr>
+        </thead>
+        <!-- 테이블 메뉴 끝 -->
+        <!-- 테이블 내용 시작 -->
+        {{#contentsfield}}
+        <tbody>
+            {{#contentSeq}}
+            <tr>
+                <td>contentSeq</td>
+                <td>{{contentSeq}}</td>
+            </tr>
+            {{/contentSeq}}
+            {{#areaName}}
+            <tr>
+                <td>지역명</td>
+                <td>{{areaName}}</td>
+            </tr>
+            {{/areaName}}
+            {{#partName}}
+            <tr>
+                <td>분야명</td>
+                <td>{{partName}}</td>
+            </tr>
+            {{/partName}}
+            {{#title}}
+            <tr>
+                <td>업체</td>
+                <td>{{title}}</td>
+            </tr>
+            {{/title}}
+            {{#address}}
+            <tr>
+                <td>주소</td>
+                <td>{{address}}</td>
+            </tr>
+            {{/address}}
+            {{#latitude}}
+            <tr>
+                <td>위도</td>
+                <td>{{latitude}}</td>
+            </tr>
+            {{/latitude}}
+            {{#longitude}}
+            <tr>
+                <td>경도</td>
+                <td>{{longitude}}</td>
+            </tr>
+            {{/longitude}}
+            {{#tel}}
+            <tr>
+                <td>전화번호</td>
+                <td>{{tel}}</td>
+            </tr>
+            {{/tel}}
+        </tbody>
+        <!-- 테이블 내용 끝 -->
+        {{/contentsfield}}
+    </table>
+</div>
+<!-- 상세보기 박스 끝 -->
+
+{{>/layout/footer}}
